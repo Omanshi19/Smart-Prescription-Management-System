@@ -1,0 +1,32 @@
+.container {
+    margin-top: 20px;
+}
+body {
+  background-color: #efefef;
+  border-top: 4px solid #aaa;
+}
+
+.user-icon {
+    width: 100px;
+    line-height: 100px !important;
+    vertical-align: middle;
+    text-align: center;
+    color: gray;
+    margin-right: 15px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.media-body p {
+    margin-bottom: 0
+}
+
+td {
+    text-align: left;
+}
+
+th {
+    text-align: center;
+}

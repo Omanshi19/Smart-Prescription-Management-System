@@ -1,0 +1,16 @@
+.container {
+    margin-top: 20px;
+}
+
+.user-icon {
+    width: 100px;
+    line-height: 100px !important;
+    vertical-align: middle;
+    text-align: center;
+    color: gray;
+    margin-right: 15px;
+}
+
+.clickable{
+    cursor: pointer;
+}

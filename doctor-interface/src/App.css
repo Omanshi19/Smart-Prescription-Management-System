@@ -1,0 +1,24 @@
+.container {
+    margin-top: 20px;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.doctor-icon {
+    width: 100px;
+    line-height: 100px !important;
+    vertical-align: middle;
+    text-align: center;
+    color: gray;
+    margin-right: 15px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+td {
+    overflow-wrap: break-word;
+}
