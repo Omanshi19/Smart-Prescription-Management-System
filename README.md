@@ -10,8 +10,8 @@ Key goals:
 
 - Eliminate counterfeit or altered prescriptions through cryptographic ownership and transfer rules. [web:1]  
 - Provide transparent visibility into prescription issuance and fulfillment. [web:1]  
-- Reduce manual verification time and operational friction in pharmacies. [web:1]  
-
+- Reduce manual verification time and operational friction in pharmacies. [web:1]
+- 
 ## Users, Roles, and Actions
 
 The platform supports three primary roles that interact with the prescription tokens:
