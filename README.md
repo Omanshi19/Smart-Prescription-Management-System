@@ -8,9 +8,9 @@ The system models each prescription as a unique token on an Ethereum-based netwo
 
 Key goals: 
 
-- Eliminate counterfeit or altered prescriptions through cryptographic ownership and transfer rules. [web:1]  
-- Provide transparent visibility into prescription issuance and fulfillment. [web:1]  
-- Reduce manual verification time and operational friction in pharmacies. [web:1]
+- Eliminate counterfeit or altered prescriptions through cryptographic ownership and transfer rules.
+- Provide transparent visibility into prescription issuance and fulfillment. 
+- Reduce manual verification time and operational friction in pharmacies. 
 - 
 ## Users, Roles, and Actions
 
