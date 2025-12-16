@@ -1,6 +1,6 @@
 # Smart Prescription Management System
 
-Smart Prescription Management System is a blockchain-powered platform for issuing, managing, and fulfilling medical prescriptions in a secure and tamper‑resistant way. It replaces paper prescriptions with on-chain tokens so that doctors, patients, and pharmacies can interact through verifiable, traceable transactions instead of manual, trust-based processes. [web:1]
+Smart Prescription Management System is a blockchain-powered platform for issuing, managing, and fulfilling medical prescriptions in a secure and tamper‑resistant way. It replaces paper prescriptions with on-chain tokens so that doctors, patients, and pharmacies can interact through verifiable, traceable transactions instead of manual, trust-based processes. 
 
 ## Overview 
 
