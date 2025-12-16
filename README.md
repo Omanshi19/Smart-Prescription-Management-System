@@ -79,23 +79,23 @@ The project is set up for local development and testing on Ethereum-compatible n
 
 Recommended environment:
 
-- **Node.js** for JavaScript tooling and scripts. [web:1]  
-- **Truffle** (or similar framework) for compiling, migrating, and testing smart contracts. [web:1]  
-- **Ganache** or a local Ethereum node for development and integration testing. [web:1]  
-- **MetaMask** (or another Web3 wallet) to interact with the dApp frontend and sign transactions. [web:1]  
+- **Node.js** for JavaScript tooling and scripts. 
+- **Truffle** (or similar framework) for compiling, migrating, and testing smart contracts. 
+- **Ganache** or a local Ethereum node for development and integration testing. 
+- **MetaMask** (or another Web3 wallet) to interact with the dApp frontend and sign transactions.
 
 Typical workflow:
 
-1. Install dependencies and compile contracts. [web:1]  
-2. Run a local blockchain instance and deploy contracts via Truffle. [web:1]  
-3. Connect the frontend to the deployed contracts using Web3 or Ethers. [web:1]  
-4. Use browser wallets to simulate doctor, patient, and pharmacy interactions. [web:1]  
+1. Install dependencies and compile contracts.
+2. Run a local blockchain instance and deploy contracts via Truffle. 
+3. Connect the frontend to the deployed contracts using Web3 or Ethers.
+4. Use browser wallets to simulate doctor, patient, and pharmacy interactions. 
 
 ## Future Enhancements
 
 Planned and possible extensions include:
 
-- Role-based access control and identity integration for verified doctors and pharmacies. [web:1]  
-- Advanced analytics and dashboards for regulators and hospital administrators. [web:1]  
-- Integration with off-chain systems (EHR, insurance claims, or national health platforms). [web:1]  
-- Enhanced UI/UX for mobile and low-connectivity environments. [web:1]  
+- Role-based access control and identity integration for verified doctors and pharmacies. 
+- Advanced analytics and dashboards for regulators and hospital administrators. 
+- Integration with off-chain systems (EHR, insurance claims, or national health platforms).
+- Enhanced UI/UX for mobile and low-connectivity environments. 
