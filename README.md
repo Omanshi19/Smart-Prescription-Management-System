@@ -17,61 +17,61 @@ Key goals:
 The platform supports three primary roles that interact with the prescription tokens:
 
 - **Doctor**  
-  - Creates a new on-chain prescription for a patient. [web:1]  
-  - Provides metadata such as doctor identifier, patient details, medication, dosage, quantity, and expiry date. [web:1]  
+  - Creates a new on-chain prescription for a patient. 
+  - Provides metadata such as doctor identifier, patient details, medication, dosage, quantity, and expiry date. 
 
 - **Patient**  
-  - Holds the prescription token in a wallet. [web:1]  
-  - Transfers the token to an authorized pharmacy to request fulfillment. [web:1]  
+  - Holds the prescription token in a wallet. 
+  - Transfers the token to an authorized pharmacy to request fulfillment.
 
 - **Pharmacy**  
-  - Verifies the validity of the received prescription token (issuer, patient, expiry, and quantity). [web:1]  
-  - Dispenses the medication if the token represents a valid, unexpired prescription. [web:1]  
+  - Verifies the validity of the received prescription token (issuer, patient, expiry, and quantity). 
+  - Dispenses the medication if the token represents a valid, unexpired prescription. 
 
-Optionally, regulatory or administrative bodies can be given read-only access to monitor prescription flows without directly participating in transactions. [web:1]
+Optionally, regulatory or administrative bodies can be given read-only access to monitor prescription flows without directly participating in transactions. 
 
 ## Blockchain Architecture
 
-Smart Prescription Management System is designed to run on a permissioned Ethereum-style consortium network rather than a public mainnet. This approach keeps data access restricted to trusted organizations while retaining the transparency and immutability benefits of blockchain. [web:1]
+Smart Prescription Management System is designed to run on a permissioned Ethereum-style consortium network rather than a public mainnet. This approach keeps data access restricted to trusted organizations while retaining the transparency and immutability benefits of blockchain.
 
 Characteristics of the network:
 
-- **Permissioned access**: Only approved entities (e.g., hospitals, regulators, large pharmacy chains) can host nodes and access full state history. [web:1]  
-- **Cost control**: Gas economics can be tuned to the consortium, avoiding unpredictable mainnet transaction fees. [web:1]  
-- **Scalability**: The consortium can be optimized for higher throughput and predictable performance. [web:1]  
+- **Permissioned access**: Only approved entities (e.g., hospitals, regulators, large pharmacy chains) can host nodes and access full state history. 
+- **Cost control**: Gas economics can be tuned to the consortium, avoiding unpredictable mainnet transaction fees. 
+- **Scalability**: The consortium can be optimized for higher throughput and predictable performance. 
 
 ## Problem Motivation
 
 Traditional prescription workflows suffer from several issues:
 
-- No single, authoritative source of truth for prescriptions across providers and pharmacies, leading to fragmentation and risk. [web:1]  
-- Manual verification processes that are slow and error‑prone, often requiring phone calls or offline confirmation between pharmacists and doctors. [web:1]  
-- Vulnerability to fraud, over‑prescribing, and misuse due to weak verification and limited traceability. [web:1]  
+- No single, authoritative source of truth for prescriptions across providers and pharmacies, leading to fragmentation and risk. 
+- Manual verification processes that are slow and error‑prone, often requiring phone calls or offline confirmation between pharmacists and doctors.
+- Vulnerability to fraud, over‑prescribing, and misuse due to weak verification and limited traceability. 
 
-This system aims to address these issues by making prescriptions cryptographically verifiable and by giving each actor a clear on-chain record of actions performed. [web:1]
+This system aims to address these issues by making prescriptions cryptographically verifiable and by giving each actor a clear on-chain record of actions performed.
 
 ## Solution Approach
 
 The core idea is to represent each prescription as a non‑fungible token (NFT) that encodes:
 
-- Doctor address or identifier. [web:1]  
-- Patient public key or unique identifier. [web:1]  
-- Medication name and brand. [web:1]  
-- Dosage information and units. [web:1]  
-- Total quantity to be dispensed. [web:1]  
-- Date of issue and expiry date. [web:1]  
+- Doctor address or identifier.  
+- Patient public key or unique identifier. 
+- Medication name and brand.  
+- Dosage information and units. 
+- Total quantity to be dispensed. 
+- Date of issue and expiry date.
 
-Smart contract logic enforces rules around issuance, transfer, and redemption of these tokens so that pharmacies can quickly validate the authenticity and status of a prescription. [web:1]
+Smart contract logic enforces rules around issuance, transfer, and redemption of these tokens so that pharmacies can quickly validate the authenticity and status of a prescription. 
 
 ## Contract: Prescription Token
 
 The main Solidity contract defines the prescription token and its lifecycle:
 
-- Implements a non‑fungible token standard suitable for representing unique prescriptions. [web:1]  
-- Stores structured metadata for each tokenized prescription. [web:1]  
-- Provides functions for doctors to issue prescriptions, patients to hold and transfer them, and pharmacies to validate and act on them. [web:1]  
+- Implements a non‑fungible token standard suitable for representing unique prescriptions. 
+- Stores structured metadata for each tokenized prescription.
+- Provides functions for doctors to issue prescriptions, patients to hold and transfer them, and pharmacies to validate and act on them. 
 
-You can extend this contract with additional constraints (e.g., refill limits, controlled substance flags, or integration hooks for hospital systems) depending on deployment requirements. [web:1]
+You can extend this contract with additional constraints (e.g., refill limits, controlled substance flags, or integration hooks for hospital systems) depending on deployment requirements. 
 
 ## Development and Tooling
 
