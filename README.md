@@ -6,7 +6,7 @@ Smart Prescription Management System is a blockchain-powered platform for issuin
 
 The system models each prescription as a unique token on an Ethereum-based network, with on-chain metadata that encodes key medical and lifecycle details. This design helps prevent forged prescriptions, supports real-time verification at pharmacies, and provides a robust audit trail for regulators or healthcare organizations. 
 
-Key goals: 
+Key goals:  
 
 - Eliminate counterfeit or altered prescriptions through cryptographic ownership and transfer rules.
 - Provide transparent visibility into prescription issuance and fulfillment.  
