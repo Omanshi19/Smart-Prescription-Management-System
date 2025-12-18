@@ -10,7 +10,7 @@ Key goals:
 
 - Eliminate counterfeit or altered prescriptions through cryptographic ownership and transfer rules.
 - Provide transparent visibility into prescription issuance and fulfillment.  
-- Reduce manual verification time and operational friction in pharmacies. 
+- Reduce manual verification time and operational friction in pharmacies.  
 - 
 ## Users, Roles, and Actions
 
